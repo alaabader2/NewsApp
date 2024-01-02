@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:src="@drawable/palestine3"
+        />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="LOG IN"
+        android:textColor="#186A6C"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="TO CONTINUE"
+        android:textColor="#186A6C"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:layout_marginLeft="24dp"
+        />
+
+    <EditText
+        android:id="@+id/name_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="280dp"
+        android:background="@drawable/edittext_box"
+        android:hint="Username"
+        android:padding="10dp"
+        android:textColorHint="#80E7EDED"
+        android:textSize="20dp"
+        />
+
+    <EditText
+        android:id="@+id/password_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name_et"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/edittext_box"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColorHint="#80E7EDED"
+        android:textSize="20dp"
+
+        />
+
+    <!-- CheckBox for Remember Me -->
+    <CheckBox
+        android:id="@+id/remember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password_et"
+        android:layout_marginTop="30dp"
+        android:text="Remember Me"
+        android:textColor="#186A6C"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        />
+
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="210dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/remember"
+        android:layout_marginTop="30dp"
+        android:text="Login"
+        android:backgroundTint="#186A6C"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"/>
+
+</RelativeLayout>
